@@ -27,4 +27,4 @@ jobs:
       - name: "verifying the app is running fine"
         run: 
           curl http://127.0.01:5000
-          echo verification done
+          echo "verification done"
