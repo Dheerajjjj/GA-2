@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-python@v6
 
       - name: "installing all the dependencies from reuirement.txt"
-        run: 
+        run:
           python -m pip install --upgrade pip
           pip install -r reuirement.txt
 
@@ -26,5 +26,5 @@ jobs:
 
       - name: "verifying the app is running fine"
         run: 
-          curl http://127.0.01:5000
+          curl http://127.0.0.1:5000
           echo "verification done"
